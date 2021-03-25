@@ -3,7 +3,7 @@ const multer = require("multer");
 const path = require("path");
 const { nanoid } = require("nanoid");
 const File = require("../models/files");
-const { asyncMiddleware } = require("../utils/async-middleware");
+const { asyncMiddleware } = require("../middleware/async-middleware");
 
 const app = express.Router();
 
