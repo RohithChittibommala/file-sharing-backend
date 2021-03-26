@@ -41,13 +41,6 @@ app.post(
   })
 );
 
-app.get(
-  "/files",
-  asyncMiddleware((req, res) => {
-    return res.json();
-  })
-);
-
 module.exports.fileRouter = app;
 
 //

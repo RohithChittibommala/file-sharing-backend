@@ -13,7 +13,7 @@ app.use(cors());
 app.set("view engine", "ejs");
 
 app.use("/api", fileRouter);
-app.use("/files", downloadRouter);
+app.use("/api/files", downloadRouter);
 
 app.use(error);
 
