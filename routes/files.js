@@ -36,7 +36,7 @@ app.post(
       });
       const response = await file.save();
       console.log(response);
-      res.json({ file: `${process.env.APP_BASE_URL}/files/${response.id}` });
+      res.json({ file: `${process.env.APP_BASE_URL}/download/${response.id}` });
     });
   })
 );
