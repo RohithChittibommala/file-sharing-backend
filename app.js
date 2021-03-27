@@ -24,7 +24,7 @@ mongoose
   })
   .then(() =>
     app.listen(PORT, () => {
-      console.log("app is up and running at http://localhost:4000");
+      console.log("app is up and running at " + PORT);
     })
   )
   .catch((er) => console.error(er));
