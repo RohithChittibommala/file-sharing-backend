@@ -19,8 +19,6 @@ router.get(
     const file = await File.findOne({ id: fileId });
     console.log(file);
     const filePath = `${__dirname}/../${file.path}`;
-
-    console.log(filePath);
     res.download(filePath);
   })
 );
